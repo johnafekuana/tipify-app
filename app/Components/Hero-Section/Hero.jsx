@@ -10,7 +10,7 @@ const Hero = () => {
     <div className='main--container'>
       <div className='section--one flex'>
         <div className='left--div w-1/2 h-screen flex flex-col pt-4' style={{ backgroundColor: '#fefefe' }}>
-          <div className='logo--text flex pl-20 mb-16'>
+          <div className='logo--text flex pl-10 mb-16'>
             <Image
 							className='mr-2'
               src="/app-logo.svg"
@@ -18,7 +18,7 @@ const Hero = () => {
               width={20}
               height={15}
             />
-            <h1 className="text-3xl font-bold text-blue-700 tracking-wide">Tipify</h1>
+            <h1 className="text-4xl font-semibold text-blue-700">Tipify</h1>
           </div>
           <div className='hero--image '>
 						<Image
@@ -61,7 +61,9 @@ const Hero = () => {
 								
 									{/* <WalletMultiButton style={{backgroundColor: '#2563EB'}} /> */}
 								
-								<p>Connect Wallet</p>
+								<p className='border px-4 py-2 rounded-full bg-blue-800 text-white'>
+                  Sign Up
+                </p>
               </li>
             </ul>
           </div>
@@ -71,26 +73,26 @@ const Hero = () => {
               <h1>Your <span className='blue--span'>time</span>.</h1>
               <h1>Your <span className='blue--span'>goals</span>.</h1>
               <h1>You're are the <span className='blue--span'>boss</span>.</h1>
-              <p className='mt-6'>Start and stop when you want</p>
+              <p className='mt-6 text-sm'>Stay updated with our newsletters</p>
             </div>
 
             <div className='email--signUp w-full mt-4 '>
               <div className='email rounded-full shadow-sm text-gray-800'>
                 <form className='flex w-full border rounded-full '>
                   <input className='w-full pl-4 py-2 outline-none rounded-l-full border-gray-300' type="email" placeholder="Enter your email" />
-                  <input className='border w-1/3 py-2 rounded-full bg-blue-800 text-white' type="submit" value="Submit" />
+                  <input className='border w-1/3 py-2 rounded-full bg-blue-800 text-white' type="submit" value="Subscribe" />
                 </form>
               </div>
 
-              <p className='agreement--text mt-4'>By clicking 'Submit', I agree to the
-								<Link href=''> Independent Contractor Agreement<br/></Link> and have read the
-								<Link href=''> terms and conditions</Link>
+              <p className='agreement--text mt-4'>By clicking "Subscribe", I agree to the
+								<Link href='' className='text-black font-bold'> Independent Contractor Agreement<br/></Link> and have read the
+								<Link href='' className='text-black font-bold'> terms and conditions.</Link>
 							</p>
-              <p className='mt-8'>
-								<Link href='' className='font-semibold text-blue-600 hover:text-blue-800 hover:underline'>
-									Already connected wallet? View Profile
+              <div className='mt-8 text-sm signup--login flex items-center'><p className='mr-2'>Already Signed Up?</p>
+								<Link href='' >
+									<p className='font-bold text-sm text-blue-600 hover:text-blue-800 underline'>Login to account</p>
 								</Link>
-							</p>
+							</div>
             </div>
           </div>
             
