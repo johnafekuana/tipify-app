@@ -64,7 +64,18 @@ const Page = () => {
 
             <h1 className='signup--option--OR text-center text-bold mt-4'>OR</h1>
 
-            <div className="use--google mt-2 flex justify-center items-center border border-gray-300 rounded-lg cursor-pointer">
+            <div className="use--wallet bg-white mt-2 flex justify-center items-center shadow-sm rounded-lg cursor-pointer">
+              <Image
+                className='mr-2'
+                src='/solana-icon.svg'
+                alt='google icon'
+                width={20}
+                height={20}
+              />
+              <p className='py-2 text-xs font-bold'>Continue with Wallet</p>
+            </div>
+            
+            <div className="use--google mt-2 flex justify-center items-center bg-white shadow-sm rounded-lg cursor-pointer">
               <Image
                 className='mr-2'
                 src='/google-icon.svg'
