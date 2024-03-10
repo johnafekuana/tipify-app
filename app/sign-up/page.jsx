@@ -34,7 +34,7 @@ const Page = () => {
 
 
         <div className="right--container w-1/2 mx-auto flex flex-col items-center bg-gray-100">
-          <h1 className='text-center font-bold text-lg mb-6 mt-2'>Sign Up</h1>
+          <h1 className='text-center font-bold text-lg mb-4 mt-2'>Sign Up</h1>
           <form action="" className='w-1/2' >
             <div className="email mb-4">
               <p className='text-xs pb-1'>Email Address</p>
@@ -68,9 +68,20 @@ const Page = () => {
               </button>
             </div>
 
-            <h1 className='signup--option--OR text-center text-bold mt-4'>OR</h1>
+            <h1 className='signup--option--OR text-center mt-4'>OR</h1>
 
-            <div className="use--google mt-2 flex justify-center items-center border border-gray-300 rounded-lg cursor-pointer">
+            <div className="use--wallet bg-white mt-2 flex justify-center items-center shadow-sm rounded-lg cursor-pointer">
+              <Image
+                className='mr-2'
+                src='/solana-icon.svg'
+                alt='google icon'
+                width={20}
+                height={20}
+              />
+              <p className='py-2 text-xs font-bold'>Continue with Wallet</p>
+            </div>
+            
+            <div className="use--google bg-white mt-2 flex justify-center items-center shadow-sm rounded-lg cursor-pointer">
               <Image
                 className='mr-2'
                 src='/google-icon.svg'
@@ -80,10 +91,11 @@ const Page = () => {
               />
               <p className='py-2 text-xs font-bold'>Continue with Google</p>
             </div>
+            
 
             <div className="existing--user--option">
               <div className='flex justify-center items-center mt-4'>
-                <p className='text-xs'>Already have an account?</p>
+                <p className='text-xs'>Already connected wallet?</p>
                 <Link href='/login'><p className='text-xs font-bold pl-2 text-blue-700'>Login</p></Link>
               </div>
             </div>
